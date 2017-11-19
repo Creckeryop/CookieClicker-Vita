@@ -354,7 +354,7 @@ end
 function NumberMod(num)
 	num=tonumber(num)
 	if num<1e+14 then
-		if string.len(num)>6 then
+		if string.len(math.floor(num))>6 then
 			return (math.floor(math.floor(num)/1000^(math.floor((1/3)*string.len(math.floor(num))-0.1)-1))/1000).." "..NAMEOMBTQ[math.floor((1/3)*string.len(math.floor(num))-0.1)-1]
 			else
 			return num
